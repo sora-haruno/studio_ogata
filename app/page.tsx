@@ -74,11 +74,6 @@ function FloatingInfoPanel() {
                     現在は全国の癒し・和みの情景を各地で「点描」。TOKYO MX『ヒーリングタイム』にて「点描シリーズ」を長年放送中。
                   </p>
                 </div>
-                <div className="pt-4 border-t border-white/5">
-                  <div className="text-zinc-500 text-[10px] text-center font-mono py-4">
-                    <img src="/info.jpg"></img>
-                  </div>
-                </div>
               </div>
               <div className="p-4 bg-black/20 border-t border-white/5 text-[10px] text-zinc-500 text-center font-mono uppercase tracking-widest">
                 © STUDIO OGATA Archive
@@ -131,14 +126,16 @@ function AccordionItem({ title, children }: { title: string, children: React.Rea
 function VideoCard({ id, title, category }: { id: string, title: string, category: string }) {
   return (
     <motion.div whileHover={{ y: -10 }} className="group relative cursor-pointer">
-      <div className="relative aspect-video overflow-hidden rounded-sm border border-white/10 bg-zinc-900">
-        <img src={`https://img.youtube.com/vi/${id}/hqdefault.jpg`} alt={title} className="object-cover w-full h-full opacity-60 group-hover:opacity-100 transition-all duration-700" />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-60" />
-      </div>
-      <div className="mt-4">
-        <p className="text-[10px] tracking-widest text-blue-500 uppercase font-mono">{category}</p>
-        <h3 className="text-lg font-light text-white mt-1 group-hover:text-blue-200 transition-colors">{title}</h3>
-      </div>
+      <a href={`https://www.youtube.com/watch?v=${id}`}>
+        <div className="relative aspect-video overflow-hidden rounded-sm border border-white/10 bg-zinc-900">
+          <img src={`https://img.youtube.com/vi/${id}/hqdefault.jpg`} alt={title} className="object-cover w-full h-full opacity-60 group-hover:opacity-100 transition-all duration-700" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-60" />
+        </div>
+        <div className="mt-4">
+          <p className="text-[10px] tracking-widest text-blue-500 uppercase font-mono">{category}</p>
+          <h3 className="text-lg font-light text-white mt-1 group-hover:text-blue-200 transition-colors">{title}</h3>
+        </div>
+      </a>
     </motion.div>
   );
 }
@@ -186,11 +183,11 @@ export default function Home() {
             <h2 className="text-3xl md:text-4xl font-extralight tracking-[0.2em] mb-16 text-blue-100 border-b border-blue-900/30 pb-4">LATEST WORK</h2>
             <div className="flex flex-col lg:flex-row gap-16 items-center">
               <div className="w-full lg:w-2/3 aspect-video bg-zinc-900 rounded-sm overflow-hidden shadow-2xl border border-white/5">
-                <iframe className="w-full h-full" src="https://www.youtube.com/embed/W8V_7UkLhWY?rel=0" allowFullScreen></iframe>
+                <iframe className="w-full h-full" src="https://www.youtube.com/embed/74hq-TtquFY?rel=0" allowFullScreen></iframe>
               </div>
               <div className="w-full lg:w-1/3 space-y-8 text-center lg:text-left">
-                <h3 className="text-white text-3xl font-light leading-tight tracking-wide">昭和の記憶、<br />その静かな熱量を撮る。</h3>
-                <p className="text-zinc-400 font-light text-sm md:text-base leading-relaxed">父・緒方による最新映像アーカイブ。当時の空気を4Kで再構築した、時間軸を超える没入体験。</p>
+                <h3 className="text-white text-3xl font-light leading-tight tracking-wide">東京点描 あきる野編<br/>-水のかけら-</h3>
+                <p className="text-zinc-400 font-light text-sm md:text-base leading-relaxed">都会を離れて緑と自然に包まれたあきる野の自然を巡る</p>
               </div>
             </div>
           </div>
@@ -282,9 +279,9 @@ export default function Home() {
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-extralight tracking-[0.2em] mb-20 text-blue-100 border-b border-blue-900/30 pb-4">SELECTED ARCHIVE</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-              <VideoCard id="R3kzGOZV8mQ" title="昭和の名車シリーズ" category="Automobile" />
-              <VideoCard id="aUJKniYHC34" title="東京点描" category="Cinematic" />
+              <VideoCard id="FMrybAzdRMM" title="点描シリーズ" category="Cinematic" />
               <VideoCard id="7JM1yBvwuX4" title="にゃんタレ" category="Animals" />
+              <VideoCard id="bN8X1ssslhs" title="ジオラマ" category="Diorama" />
             </div>
           </div>
         </section>
@@ -292,8 +289,8 @@ export default function Home() {
 
         {/* Footer */}
         <footer className="relative z-20 py-20 px-6 text-center border-t border-white/5 bg-zinc-950">
-          <div className="text-white font-extralight tracking-[0.8em] text-xs mb-4">STUDIO OGATA</div>
-          <p className="text-zinc-600 text-[10px] font-mono uppercase tracking-widest">© 2026 Ken Ogata All Rights Reserved. Directed by Sora.</p>
+          <div className="text-white font-extralight tracking-[0.8em] text-xs mb-4">尾形 賢/Ken Ogata</div>
+          <p className="text-zinc-600 text-[10px] font-mono uppercase tracking-widest">© 2026 STUDIO OGATA All Rights Reserved. Directed by Sora.</p>
         </footer>
 
       </main>
