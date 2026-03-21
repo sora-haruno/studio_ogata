@@ -65,18 +65,18 @@ function FloatingInfoPanel() {
                 <div className="space-y-2">
                   <h3 className="text-blue-300 text-xs font-mono tracking-widest uppercase">Introduction</h3>
                   <p className="text-[11px] text-zinc-300 leading-relaxed font-light">
-                    1970年代より写真家として活動を開始。マガジンハウス等の雑誌グラビアや写真集を数多く手掛けた後、映像演出の世界へ。テレビ東京『日立サウンドブレイク』、テレビ朝日『湾岸LIVE』などの演出を歴任。
+                    1970年代より写真家として活動を開始。マガジンハウス等の雑誌グラビアや写真集を数多く手掛けた後、映像演出の世界へ。テレビ東京『日立サウンドブレイク』、テレビ朝日『湾岸LIVE』などの演出を手掛ける。
                   </p>
                 </div>
                 <div className="space-y-2">
                   <h3 className="text-blue-300 text-xs font-mono tracking-widest uppercase">Core Works</h3>
                   <p className="text-[11px] text-zinc-300 leading-relaxed font-light">
-                    現在は4Kシネマティック映像によるアーカイブ制作を中心に活動。TOKYO MX『ヒーリングタイム』にて「東京点描」「昭和の名車」シリーズを長年放送中。
+                    現在は全国の癒し・和みの情景を各地で「点描」。TOKYO MX『ヒーリングタイム』にて「点描シリーズ」を長年放送中。
                   </p>
                 </div>
                 <div className="pt-4 border-t border-white/5">
                   <div className="text-zinc-500 text-[10px] text-center font-mono py-4">
-                    Connecting to Live Feed...
+                    <img src="/info.jpg"></img>
                   </div>
                 </div>
               </div>
@@ -152,8 +152,8 @@ export default function Home() {
       <nav className="fixed top-0 w-full z-50 flex justify-between items-center px-6 py-6 md:px-12 backdrop-blur-md bg-black/20">
         <div className="text-white font-extralight tracking-[0.4em] text-xs md:text-sm">STUDIO OGATA</div>
         <div className="flex items-center gap-6 md:gap-8">
-          <a href="https://www.youtube.com/@studioogata" target="_blank" className="text-gray-400 hover:text-red-500 text-[10px] tracking-widest font-mono transition-colors">YOUTUBE</a>
-          <a href="mailto:your-email@example.com" className="border border-white/20 px-5 py-2 rounded-full text-[10px] text-white tracking-widest hover:bg-white hover:text-black transition-all">CONTACT</a>
+          <a href="https://www.youtube.com/@studioogata3259" target="_blank" className="text-gray-400 hover:text-red-500 text-[10px] tracking-widest font-mono transition-colors">YOUTUBE</a>
+          <a href="https://forms.gle/syLZADWMVSxqv12Z6" target='_blank' className="border border-white/20 px-5 py-2 rounded-full text-[10px] text-white tracking-widest hover:bg-white hover:text-black transition-all">CONTACT</a>
         </div>
       </nav>
 
@@ -251,7 +251,7 @@ export default function Home() {
               <TimelineItem
                 year="2010s - Present"
                 title="Cinematic Archive & Web"
-                description="4K技術を用いたヒーリング映像の確立。TOKYO MX『Healing Time』を中心に、全国の風景を次世代へ残す活動を展開。"
+                description="ヒーリング映像の確立。TOKYO MX『Healing Time』を中心に、全国の風景を次世代へ残す活動を展開。"
               >
                 <div className="mt-8">
                   <AccordionItem title="View Digital Contents">

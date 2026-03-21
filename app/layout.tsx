@@ -10,8 +10,8 @@ export const metadata: Metadata = {
     default: "STUDIO OGATA | 映像作家・フォトグラファー 尾形 賢",
     template: "%s | STUDIO OGATA"
   },
-  description: "写真家・映像作家として40年以上のキャリアを持つ尾形 賢（STUDIO OGATA）の公式ポートフォリオ。昭和の名車、路面電車、東京点描など、情緒豊かな映像美の世界を公開。",
-  keywords: ["尾形賢", "STUDIO OGATA", "映像作家", "フォトグラファー", "ヒーリングタイム", "昭和の名車", "東京点描"],
+  description: "写真家・映像作家として40年以上のキャリアを持つ尾形 賢（STUDIO OGATA）の公式ポートフォリオ。東京点描（点描シリーズ）、昭和の名車、猫、ジオラマなど、情緒豊かな映像美の世界を公開。",
+  keywords: ["尾形賢", "STUDIO OGATA", "映像作家", "フォトグラファー", "ヒーリングタイム", "昭和の名車", "点描シリーズ", "猫", "ジオラマ", "癒し"],
   authors: [{ name: "Ken Ogata" }],
   openGraph: {
     title: "STUDIO OGATA | 映像作家・フォトグラファー 尾形 賢",
