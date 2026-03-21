@@ -166,7 +166,7 @@ export default function Home() {
           loop
           muted
           playsInline
-          className="..."
+          className="w-full h-full object-cover opacity-60 isolate"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black" />
       </div>
