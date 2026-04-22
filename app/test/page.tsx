@@ -29,8 +29,8 @@ const TOKYO_SERIES = [
         id: "Mizuna",
         title: "罔象（みづは）", // 「づ」に修正済み！
         subtitle: "水と緑の聖地、その深淵へ。",
-        videoId: "ngiEFE4ER3A",
-        isReleased: true,
+        videoId: "",
+        isReleased: false,
     }
 ];
 
@@ -269,6 +269,9 @@ function TokyoSeriesGallery() {
                 「今ここが動いてるよ」を見せるならこれだけで十分効果的です */}
                             </div>
                             {/* ホバー時に数字を出すなどの遊び心 */}
+                            <span className={`ml-2 text-[10px] font-mono transition-colors ${i === index ? "text-blue-400" : "text-zinc-600 group-hover:text-zinc-400"}`}>
+                                0{i}
+                            </span>
 
                         </button>
                     ))}
@@ -309,7 +312,7 @@ function TokyoSeriesGallery() {
                                     animate={{ opacity: 1, y: 0 }}
                                     transition={{ delay: 0.3 }}
                                 >
-
+                                    <p className="text-blue-400 text-xs font-mono tracking-widest mb-2">Series #{index}</p>
                                     <h3 className="text-white text-4xl font-light leading-tight tracking-wider mb-4">
                                         東京点描<br />『{TOKYO_SERIES[index].title}』
                                     </h3>
@@ -381,10 +384,10 @@ export default function Home() {
                         <h2 className="text-3xl md:text-4xl font-extralight tracking-[0.2em] mb-16 text-blue-100 border-b border-blue-900/30 pb-4">LATEST WORK</h2>
                         <div className="flex flex-col lg:flex-row gap-16 items-center">
                             <div className="w-full lg:w-2/3 aspect-video bg-zinc-900 rounded-sm overflow-hidden shadow-2xl border border-white/5">
-                                <iframe className="w-full h-full" src="https://www.youtube.com/embed/ngiEFE4ER3A?rel=0" allowFullScreen></iframe>
+                                <iframe className="w-full h-full" src="https://www.youtube.com/embed/HGgib_o1X0Y?rel=0" allowFullScreen></iframe>
                             </div>
                             <div className="w-full lg:w-1/3 space-y-8 text-center lg:text-left">
-                                <h3 className="text-white text-3xl font-light leading-tight tracking-wide">東京点描<br />『罔象』</h3>
+                                <h3 className="text-white text-3xl font-light leading-tight tracking-wide">東京点描<br />『Mover』</h3>
                                 <p className="text-zinc-400 font-light text-sm md:text-base leading-relaxed">都会の喧騒を離れ、心癒されるひとときを</p>
                             </div>
                         </div>
