@@ -23,7 +23,7 @@ const TOKYO_SERIES = [
         title: "道",
         subtitle: "都会の洗練と静寂が交差する場所。",
         videoId: "dbP4ADRwnew",
-        isReleased: false,
+        isReleased: true,
     },
     {
         id: "Mizuna",
@@ -384,7 +384,7 @@ export default function Home() {
                                 <iframe className="w-full h-full" src="https://www.youtube.com/embed/dbP4ADRwnew?rel=0" allowFullScreen></iframe>
                             </div>
                             <div className="w-full lg:w-1/3 space-y-8 text-center lg:text-left">
-                                <h3 className="text-white text-3xl font-light leading-tight tracking-wide">東京点描<br />『罔象』</h3>
+                                <h3 className="text-white text-3xl font-light leading-tight tracking-wide">東京点描<br />『道』</h3>
                                 <p className="text-zinc-400 font-light text-sm md:text-base leading-relaxed">都会の喧騒を離れ、心癒されるひとときを</p>
                             </div>
                         </div>
