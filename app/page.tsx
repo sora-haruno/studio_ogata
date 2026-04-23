@@ -197,7 +197,7 @@ function TokyoSeriesGallery() {
             <div className="max-w-6xl mx-auto">
                 <div className="flex justify-between items-end mb-16 border-b border-blue-900/30 pb-4">
                     <h2 className="text-3xl md:text-4xl font-extralight tracking-[0.2em] text-blue-100 uppercase">
-                        Tokyo Elegance & More
+                        東京点描シリーズ
                     </h2>
                     {/*     <div className="flex gap-4 text-xs font-mono text-zinc-500">
                         {TOKYO_SERIES.map((_, i) => (
